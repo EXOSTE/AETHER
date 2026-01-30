@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ededed;
+
+  --color-primary: #6200ea;
+  /* Electric Indigo */
+  --color-accent: #00e5ff;
+  /* Cyan */
+
+  --font-display: "Cinzel", serif;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Hide (Optional, for immersive feel) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
